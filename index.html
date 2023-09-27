@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form>
@@ -14,13 +15,59 @@
 
 
         <label for="mdp">Mot de passe</label>
-        <input type="text" id="mdp"><br>
+        <input type="password" id="mdp"><br>
 
         <label for="prenom">Prenom</label>
         <input type="texte" id="prenom" value="Votre prenom"><br>
 
         <label for="email">Email</label>
         <input type="email" id="email"><br>
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar"><br>
+
+        <label for="pays ">Pays</label>
+        <select id="pays" name="Pays">
+            <option value="Espagne">Espagne</option>
+            <option value="France">France</option>
+            <option value="Afrique">Afrique</option>
+
+        </select><br>
+        <label for="fruit">Quels sont vos fruits préférés ?</label><br><br>
+        <input type="checkbox" name="Orange" id="orange" value="Orange">Orange
+        <input type="checkbox" name="Fraise" id="fraise" value="Fraise">Fraise
+        <input type="checkbox" name="Poire" id="poire" value="Poire">Poire <br><br>
+
+        <label for="civil">Civilité</label><br><br>
+        <input type="radio" name="homme" id="homme">Homme
+        <input type="radio" name="femme" id="femme">Femme <br><br>
+
+        <label for="ville">Ville</label>
+        <input type="text" id="ville"><br>
+        <label for="cp">Code Postal</label>
+        <input type="number" id="cp"><br>
+        <label for="adresse">Adresse</label>
+        <textarea id="adresse" rows="4" cols="18"></textarea><br>
+        <label for="datenaissance"> Date de Naissance></label>
+        <input type="date" name="datenaissance" id="datenaissance"><br>
+        <label for="jauge">Jauge</label>
+        <input type="range" name="jauge" id="jauge"><br>
+        <label for="tel">Telephone</label>
+        <input type="number" name="tel" id="tel"><br>
+        <label for="search">Recherche</label>
+        <input type="search" id="search"><br>
+        <label for="couleur">Couleur</label>
+        <input type="color" name="couleur" id="couleur"><br>
+        <label for="avatar2">Avatar</label>
+        <input type="file" id="avatar2"><br>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" value="test"><br>
+        <input type="submit" value="s'inscrire"><br>
+        <input type="button" name="inscription" id="inscription2" value="s'inscrire Autre bouton"> <br>
+        <input type="date" name="date" id="date">
+        <label for="nom2">Votre nom</label>
+        <input type="text" id="nom2" value="bonjour">
+        <input type="submit" value="Enovyer">
+
     </form>
 
 </body>
