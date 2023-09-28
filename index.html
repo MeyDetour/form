@@ -11,14 +11,14 @@
 <body>
     <form>
         <label for="pseudo">Pseudo *</label>
-        <input type="text" id="pseudo"><br><br>
+        <input type="text" name="pseudo" id="pseudo"><br><br>
 
 
         <label for="mdp">Mot de passe</label>
         <input type="password" id="mdp"><br>
 
         <label for="prenom">Prenom</label>
-        <input type="texte" id="prenom" value="Votre prenom"><br>
+        <input type="texte" id="prenom" placeholder="Votre prenom"><br>
 
         <label for="email">Email</label>
         <input type="email" id="email"><br>
@@ -27,10 +27,11 @@
 
         <label for="pays ">Pays</label>
         <select id="pays" name="Pays">
-            <option value="Espagne">Espagne</option>
-            <option value="France">France</option>
-            <option value="Afrique">Afrique</option>
-
+            <optgroup label="Europe">
+                <option value="fr">France</option>
+                <option value="it">Italie</option>
+                <option value="es" selected>Espagne</option>
+            </optgroup>
         </select><br>
         <label for="fruit">Quels sont vos fruits préférés ?</label><br><br>
         <input type="checkbox" name="Orange" id="orange" value="Orange">Orange
@@ -38,11 +39,16 @@
         <input type="checkbox" name="Poire" id="poire" value="Poire">Poire <br><br>
 
         <label for="civil">Civilité</label><br><br>
-        <input type="radio" name="homme" id="homme">Homme
-        <input type="radio" name="femme" id="femme">Femme <br><br>
+        <p><input type="radio" name="civil" id="homme">Homme
+        <input type="radio" name="civil" id="femme">Femme </p> <br><br>
 
         <label for="ville">Ville</label>
-        <input type="text" id="ville"><br>
+        <input type="text" id="ville" list="france"><br>
+        <datalist id="france">
+            <option>Paris</option>
+            <option>Marseille</option>
+            <option>Lyon</option>
+        </datalist><br />
         <label for="cp">Code Postal</label>
         <input type="number" id="cp"><br>
         <label for="adresse">Adresse</label>
